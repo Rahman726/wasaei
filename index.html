@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abdul's github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <svg height="32" viewBox="0 0 16 16" width="32"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </div>
+            <input type="text" class="search-box" placeholder="Search or jump to...">
+            <ul class="nav-links">
+                <li><a href="#">Pull requests</a></li>
+                <li><a href="#">Issues</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Explore</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="notification-icon">
+                <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M8 16a2 2 0 001.985-1.75c.005-.138-.097-.25-.235-.25H6.25c-.138 0-.24.112-.235.25A2 2 0 008 16z"></path><path fill="currentColor" fill-rule="evenodd" d="M8 1.5A4.5 4.5 0 003.5 6v2.75a.75.75 0 01-.75.75h-1a.75.75 0 00-.75.75v1.5c0 .414.336.75.75.75h10.5a.75.75 0 00.75-.75v-1.5a.75.75 0 00-.75-.75h-1a.75.75 0 01-.75-.75V6A4.5 4.5 0 008 1.5zm0 1a3.5 3.5 0 013.5 3.5v2.75a.75.75 0 00.75.75h1v.5h-11v-.5h1a.75.75 0 00.75-.75V6A3.5 3.5 0 018 2.5z"></path></svg>
+            </div>
+            <div class="profile-dropdown">
+                <div class="avatar-small"></div>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="profile-header-inner">
+            <ul class="profile-tabs">
+                <li class="tab active"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg> Overview</li>
+                <li class="tab"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg> Repositories <span class="badge">12</span></li>
+                <li class="tab"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 12a.75.75 0 000-1.5h-7.5a.75.75 0 000 1.5h7.5zm.75-4.75a.75.75 0 01-.75.75h-7.5a.75.75 0 010-1.5h7.5a.75.75 0 01.75.75zm-.75-3.25a.75.75 0 000-1.5h-7.5a.75.75 0 000 1.5h7.5z"></path></svg> Projects</li>
+                <li class="tab"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path><path fill="currentColor" d="M6.5 11.5a1 1 0 100-2 1 1 0 000 2z"></path><path fill="currentColor" fill-rule="evenodd" d="M8 11.5a1 1 0 100-2 1 1 0 000 2z"></path><path fill="currentColor" d="M9.5 11.5a1 1 0 100-2 1 1 0 000 2z"></path></svg> Packages</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Profile Sidebar -->
+        <aside class="profile-sidebar">
+            <div class="avatar-container">
+                <div class="avatar-large"></div>
+                <div class="status-emoji">👨‍💻</div>
+            </div>
+            <h1 class="profile-name">Abdul Wasae</h1>
+            <p class="profile-username">@abdulwasae</p>
+            <p class="profile-bio">Student | Learning to code | Building projects one line at a time 🚀</p>
+            <button class="edit-profile-btn">Edit profile</button>
+            <div class="profile-stats">
+                <a href="#" class="stat-link"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.556 3.604l-.83.845a.5.5 0 01-.708 0l-.836-.836a5.507 5.507 0 00-3.336-3.336l-.845-.83a.5.5 0 010-.708l.845-.83A5.507 5.507 0 015.15 2.254L3.5 2.5a.5.5 0 01-.5-.5V.5a.5.5 0 01.5-.5h1.585a.5.5 0 01.474.342l.304.911A4.502 4.502 0 0110.5 5.5c0 1.65-.894 3.092-2.223 3.882l-.968.484a.5.5 0 01-.618-.765l.968-.484A3.502 3.502 0 009.5 5.5a3.5 3.5 0 00-6.923-.678l-.967.468a.5.5 0 01-.588-.809L2.2 3.6A3.486 3.486 0 012 5.5z"></path></svg> <strong>15</strong> followers</a>
+                <span class="dot">·</span>
+                <a href="#" class="stat-link"><strong>8</strong> following</a>
+            </div>
+            <div class="profile-details">
+                <p class="detail-item"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M11.536 14.01a8.473 8.473 0 003.79-3.79 4.994 4.994 0 00-1.104-1.537l-.003-.003a4.998 4.998 0 00-7.071 0 4.998 4.998 0 000 7.071l.003.003a4.993 4.993 0 001.537 1.104 8.473 8.473 0 003.79 3.79 1.001 1.001 0 001.052-1.058zM8 12a4 4 0 110-8 4 4 0 010 8z"></path></svg> Pakistan</p>
+                <p class="detail-item"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg> <a href="#">abdulwasae.com</a></p>
+            </div>
+            <div class="achievements">
+                <h3>Achievements</h3>
+                <div class="badge-row">
+                    <div class="achievement-badge" title="Pull Shark">🦈</div>
+                    <div class="achievement-badge" title="YOLO">🚀</div>
+                    <div class="achievement-badge" title="Starstruck">⭐</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Repositories Section -->
+        <main class="content-main">
+            <div class="pinned-section">
+                <h2>Pinned <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M4.456.734a1.75 1.75 0 012.826.504l.615.858a.625.625 0 00.897.133l.066-.066a1.75 1.75 0 012.476 2.475l-.066.066a.625.625 0 00.134.897l.858.615a1.75 1.75 0 01.504 2.826l-.39.39a.625.625 0 00-.167.407v2.123a1.75 1.75 0 01-.466 1.19l-.195.195a1.75 1.75 0 01-1.19.466h-2.123a.625.625 0 00-.407.167l-.39.39a1.75 1.75 0 01-2.826-.504l-.615-.858a.625.625 0 00-.897-.133l-.066.066a1.75 1.75 0 01-2.475-2.476l.066-.066a.625.625 0 00-.134-.897l-.858-.615a1.75 1.75 0 01-.504-2.826l.39-.39a.625.625 0 00.167-.407V3.25a1.75 1.75 0 01.466-1.19l.195-.195zM8 11.24a3.249 3.249 0 10-3.25-3.25 3.249 3.249 0 003.25 3.25z"></path></svg></h2>
+
+                <!-- Add New Project Form -->
+                <div class="add-project-form">
+                    <h3>Add New Project</h3>
+                    <input type="text" id="projectName" placeholder="Project Name (e.g. my-app)" required>
+                    <input type="url" id="projectUrl" placeholder="Project URL (e.g. https://example.netlify.app)" required>
+                    <input type="text" id="projectDesc" placeholder="Description (optional)">
+                    <select id="projectLang">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="react">React</option>
+                    </select>
+                    <button onclick="addProject()">Add Project</button>
+                </div>
+
+                <div class="repo-grid" id="repoGrid">
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                            <a href="https://69d628a28409a86cbd5fff8e--proboiz102.netlify.app/" target="_blank" class="repo-name">proboiz-102</a>
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <p class="repo-description">Project deployed on Netlify</p>
+                        <div class="repo-meta">
+                            <span class="lang"><span class="lang-color html"></span> HTML</span>
+                            <span class="stars"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg> 5</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                            <a href="https://69d62940d2f0ee56f75217d0--proboiz103.netlify.app/" target="_blank" class="repo-name">proboiz-103</a>
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <p class="repo-description">Project deployed on Netlify</p>
+                        <div class="repo-meta">
+                            <span class="lang"><span class="lang-color js"></span> JavaScript</span>
+                            <span class="stars"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg> 8</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                            <a href="https://creative-brigadeiros-9e4068.netlify.app/" target="_blank" class="repo-name">creative-brigadeiros</a>
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <p class="repo-description">Project deployed on Netlify</p>
+                        <div class="repo-meta">
+                            <span class="lang"><span class="lang-color css"></span> CSS</span>
+                            <span class="stars"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg> 12</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                            <a href="https://69d62b1bb2d07f730b7fed91--funny-caramel-208708.netlify.app/album.html" target="_blank" class="repo-name">funny-caramel-album</a>
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <p class="repo-description">Photo album project deployed on Netlify</p>
+                        <div class="repo-meta">
+                            <span class="lang"><span class="lang-color html"></span> HTML</span>
+                            <span class="stars"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg> 7</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                            <a href="https://69d62842b70a4e5857b7b40b--proboiz101.netlify.app/" target="_blank" class="repo-name">proboiz-101</a>
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <p class="repo-description">Project deployed on Netlify</p>
+                        <div class="repo-meta">
+                            <span class="lang"><span class="lang-color js"></span> JavaScript</span>
+                            <span class="stars"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg> 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contribution-graph">
+                <h2>52 contributions in the last year</h2>
+                <div class="graph-container">
+                    <div class="graph">
+                        <!-- Simulated contribution grid -->
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-4"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-4"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-3"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-2"></div>
+                        </div>
+                        <div class="week">
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                            <div class="day level-3"></div>
+                            <div class="day level-2"></div>
+                            <div class="day level-1"></div>
+                            <div class="day level-0"></div>
+                        </div>
+                    </div>
+                    <div class="graph-legend">
+                        <span>Less</span>
+                        <div class="legend-dot level-0"></div>
+                        <div class="legend-dot level-1"></div>
+                        <div class="legend-dot level-2"></div>
+                        <div class="legend-dot level-3"></div>
+                        <div class="legend-dot level-4"></div>
+                        <span>More</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-section">
+                <h2>Contribution activity</h2>
+                <div class="activity-item">
+                    <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                    <div class="activity-content">
+                        <p>Created 3 commits in 1 repository</p>
+                        <p class="activity-repo"><span class="dot-activity"></span> github-clone 3 commits</p>
+                    </div>
+                    <span class="activity-date">Apr 13</span>
+                </div>
+                <div class="activity-item">
+                    <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+                    <div class="activity-content">
+                        <p>Starred 2 repositories</p>
+                        <p class="activity-repo"><span class="dot-activity"></span> awesome-project</p>
+                    </div>
+                    <span class="activity-date">Apr 12</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <span>&copy; 2024 GitHub, Inc.</span>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Status</a>
+            <a href="#">Docs</a>
+            <a href="#">Contact</a>
+            <a href="#">Manage cookies</a>
+            <a href="#">Do not share my personal information</a>
+        </div>
+    </footer>
+
+    <script>
+        function addProject() {
+            const name = document.getElementById('projectName').value.trim();
+            const url = document.getElementById('projectUrl').value.trim();
+            const desc = document.getElementById('projectDesc').value.trim() || 'Project deployed on Netlify';
+            const lang = document.getElementById('projectLang').value;
+
+            if (!name || !url) {
+                alert('Please enter project name and URL!');
+                return;
+            }
+
+            const langMap = {
+                'html': { label: 'HTML', class: 'html' },
+                'css': { label: 'CSS', class: 'css' },
+                'js': { label: 'JavaScript', class: 'js' },
+                'python': { label: 'Python', class: 'python' },
+                'react': { label: 'React', class: 'react' }
+            };
+
+            const langInfo = langMap[lang];
+            const stars = Math.floor(Math.random() * 15) + 1;
+
+            const repoCard = document.createElement('div');
+            repoCard.className = 'repo-card';
+            repoCard.innerHTML = `
+                <div class="repo-header">
+                    <svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                    <a href="${url}" target="_blank" class="repo-name">${name}</a>
+                    <span class="repo-visibility">Public</span>
+                </div>
+                <p class="repo-description">${desc}</p>
+                <div class="repo-meta">
+                    <span class="lang"><span class="lang-color ${langInfo.class}"></span> ${langInfo.label}</span>
+                    <span class="stars"><svg viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg> ${stars}</span>
+                </div>
+            `;
+
+            document.getElementById('repoGrid').appendChild(repoCard);
+
+            // Clear form
+            document.getElementById('projectName').value = '';
+            document.getElementById('projectUrl').value = '';
+            document.getElementById('projectDesc').value = '';
+        }
+    </script>
+</body>
+</html>
